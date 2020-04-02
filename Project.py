@@ -4,6 +4,9 @@ from PIL import Image, ImageTk
 from tkinter import filedialog
 import cv2
 
+
+#start making GUI
+
 window = Tk()
 window.geometry("800x800")
 window.title("Welcome")
@@ -40,6 +43,7 @@ def browser():
 #     button4 = Button(window, text="InsertingImage", fg="black", bg="White", relief="solid", font=("arial", 20, "bold"),command=browser)
 #     button4.place(x=0, y=110)
 
+#main Code of RGB to GRAYSCALE
 
 def app():
     global x
@@ -106,5 +110,5 @@ button3 = Button(window, image=upload,borderwidth=0,bg="grey",command=browser)
 
 # button3=Button(window, text = 'upload !', image =upload, command='browser' )
 button3.place(x=123, y=210)
-
+#button3.place(x=123, y=210)
 window.mainloop()
